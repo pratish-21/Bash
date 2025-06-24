@@ -1,0 +1,139 @@
+login as: azureuser
+azureuser@172.212.83.204's password:
+Access denied
+azureuser@172.212.83.204's password:
+Access denied
+azureuser@172.212.83.204's password:
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-1015-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Jun 24 06:48:13 UTC 2025
+
+  System load:  0.0               Processes:             110
+  Usage of /:   5.6% of 28.02GB   Users logged in:       0
+  Memory usage: 66%               IPv4 address for eth0: 10.0.0.4
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Tue Jun 24 06:47:05 2025 from 49.205.96.153
+azureuser@bash:~$ pwd
+/home/azureuser
+azureuser@bash:~$ ls
+azureuser@bash:~$ touch file1
+azureuser@bash:~$ mkdir new folder
+azureuser@bash:~$ touch f1 f2 f3 f4 f5
+azureuser@bash:~$ mkdir n1 n2 n3 n4 n5
+azureuser@bash:~$ cd n3
+azureuser@bash:~/n3$ ls
+azureuser@bash:~/n3$ touch f1 f2 f3
+azureuser@bash:~/n3$ ls
+f1  f2  f3
+azureuser@bash:~/n3$ stat f1
+  File: f1
+  Size: 0               Blocks: 0          IO Block: 4096   regular empty file
+Device: 8,1     Inode: 262270      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/azureuser)   Gid: ( 1000/azureuser)
+Access: 2025-06-24 06:49:24.615378269 +0000
+Modify: 2025-06-24 06:49:24.615378269 +0000
+Change: 2025-06-24 06:49:24.615378269 +0000
+ Birth: 2025-06-24 06:49:24.615378269 +0000
+azureuser@bash:~/n3$ rm f1
+azureuser@bash:~/n3$ ls
+f2  f3
+azureuser@bash:~/n3$ rm f*
+azureuser@bash:~/n3$ ls
+azureuser@bash:~/n3$ cd ..
+azureuser@bash:~$ ls
+f1  f2  f3  f4  f5  file1  folder  n1  n2  n3  n4  n5  new
+azureuser@bash:~$ pwd
+/home/azureuser
+azureuser@bash:~$ cd n4
+azureuser@bash:~/n4$ cd ..
+azureuser@bash:~$ mv f4 /home/azureuser/n4
+azureuser@bash:~$ ls
+f1  f2  f3  f5  file1  folder  n1  n2  n3  n4  n5  new
+azureuser@bash:~$ cd n4
+azureuser@bash:~/n4$ ls
+f4
+azureuser@bash:~/n4$ stat f4
+  File: f4
+  Size: 0               Blocks: 0          IO Block: 4096   regular empty file
+Device: 8,1     Inode: 262263      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/azureuser)   Gid: ( 1000/azureuser)
+Access: 2025-06-24 06:48:53.686012851 +0000
+Modify: 2025-06-24 06:48:53.686012851 +0000
+Change: 2025-06-24 06:51:26.344465668 +0000
+ Birth: 2025-06-24 06:48:53.686012851 +0000
+azureuser@bash:~/n4$ ls -l f4
+-rw-rw-r-- 1 azureuser azureuser 0 Jun 24 06:48 f4
+azureuser@bash:~/n4$ cd ..
+azureuser@bash:~$ rmdir new
+azureuser@bash:~$ rmdir n4
+rmdir: failed to remove 'n4': Directory not empty
+azureuser@bash:~$ rm -r n4
+azureuser@bash:~$ ls
+f1  f2  f3  f5  file1  folder  n1  n2  n3  n5
+azureuser@bash:~$ rmdir n*
+azureuser@bash:~$ ls
+f1  f2  f3  f5  file1  folder
+azureuser@bash:~$ rm -r folder
+azureuser@bash:~$ ls
+f1  f2  f3  f5  file1
+azureuser@bash:~$ rm f*
+azureuser@bash:~$ s
+s: command not found
+azureuser@bash:~$ ls
+azureuser@bash:~$ touch file.txt
+azureuser@bash:~$ nano file.txt
+azureuser@bash:~$ cat file.txt
+azureuser@bash:~$ nano file.txt
+azureuser@bash:~$ cat file.txt
+Hi ,
+this is a test file created for copy command in linux
+azureuser@bash:~$ vi file.txt
+azureuser@bash:~$ cat file.txt
+Hi ,
+this is a test file created for copy command in linux
+azureuser@bash:~$ ls
+file.txt  file.txtMAMAA  file.txtg
+azureuser@bash:~$ rm -r file.txtMAMAA
+azureuser@bash:~$ ls
+file.txt  file.txtg
+azureuser@bash:~$ rm -r file.txtg
+azureuser@bash:~$ ls
+file.txt
+azureuser@bash:~$ cat file.txt
+Hi ,
+this is a test file created for copy command in linux
+azureuser@bash:~$ touc f2.txt
+Command 'touc' not found, did you mean:
+  command 'touch' from deb coreutils (9.4-2ubuntu2)
+Try: sudo apt install <deb name>
+azureuser@bash:~$ touch f2.txt
+azureuser@bash:~$ cp file.txt f2.txt
+azureuser@bash:~$ ls
+f2.txt  file.txt
+azureuser@bash:~$ cat f2.txt
+Hi ,
+this is a test file created for copy command in linux
+azureuser@bash:~$ rm file.txt
+azureuser@bash:~$ ls
+f2.txt
+azureuser@bash:~$ cat f2.txt
+Hi ,
+this is a test file created for copy command in linux
+azureuser@bash:~$

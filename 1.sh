@@ -10,4 +10,4 @@ echo $nae2ls
 #environment var1
 #!/usr/bin/bash
 $SHELL , $PWD , $NAME
-
+#
